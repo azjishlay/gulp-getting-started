@@ -25,6 +25,16 @@ gulp.task('build-css', function() {
     .pipe(gulp.dest('public/assets/stylesheets'));
 });
 
+// put it all together
+gulp.task('build-js', function() {
+  return gulp.src('source/javascript/**/*.js')
+    .pipe(sourcemaps.init())
+      .pipe(concat('bundle.js'))
+      //only uglify if gulp is ran with '--type production'
+      .pipe(gutil.env.type === 'production' ? uglify() : gutil.noop())
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('public/assets/javascript'));
+});
 
 // configure which files to watch and what tasks to use on file changes
 gulp.task('watch', function() {
