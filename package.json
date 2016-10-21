@@ -1,0 +1,24 @@
+{
+  "name": "gulp-getting-started",
+  "version": "1.0.0",
+  "description": "Tutorial: https://scotch.io/tutorials/automate-your-tasks-easily-with-gulp-js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lijasminej/gulp-getting-started.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lijasminej/gulp-getting-started/issues"
+  },
+  "homepage": "https://github.com/lijasminej/gulp-getting-started#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.7"
+  }
+}
